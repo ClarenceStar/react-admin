@@ -1,0 +1,113 @@
+.popover__content
+    position absolute
+    z-index 10000
+    font-size 12px
+    line-height 1.5
+    animation-duration 0.3s
+
+    &--left
+    &--leftTop
+    &--leftBottom
+        padding-right 8px
+    
+    &--top
+    &--topLeft
+    &--topRight
+        padding-bottom 8px
+    
+    &--bottom 
+    &--bottomLeft
+    &--bottomRight
+        padding-top 8px
+    
+    &--right
+    &--rightTop
+    &--rightBottom
+        padding-left 8px
+
+.popover--hidden
+    visibility hidden
+
+.popover__arrow
+    position absolute
+    width 0
+    height 0
+    border-color transparent
+    border-style solid
+
+    &--top
+    &--topLeft
+    &--topRight
+        bottom 3px
+        border-width 5px 5px 0
+        border-top-color #fff
+        
+    &--top
+        left 50%
+        margin-left -5px
+
+    &--topLeft
+        left 16px
+    
+    &--topRight
+        right 16px
+
+    &--left
+    &--leftTop
+    &--leftBottom
+        right 3px
+        border-width 5px 0 5px 5px
+        border-left-color #fff
+    
+    &--left
+        top 50%
+        margin-top -5px
+    
+    &--leftTop
+        top 8px
+    
+    &--leftBottom
+        bottom 8px
+    
+    &--bottom 
+    &--bottomLeft
+    &--bottomRight
+        top 3px
+        border-width 0 5px 5px
+        border-bottom-color #fff
+    
+    &--bottom
+        left 50%
+        margin-left -5px
+    
+    &--bottomLeft
+        left 16px
+    
+    &--bottomRight
+        right 16px
+    
+    &--right
+    &--rightTop
+    &--rightBottom
+        left 3px
+        border-width 5px 5px 5px 0
+        border-right-color #fff
+
+    &--right
+        top 50%
+        margin-top -5px
+    
+    &--rightTop
+        top 8px
+    
+    &--rightBottom
+        bottom 8px
+
+.popover__inner
+    min-width 150px
+    text-align left
+    background-color #fff
+    border-radius 4px
+    box-shadow 0 1px 6px rgba(0,0,0,.2)
+    overflow hidden
+

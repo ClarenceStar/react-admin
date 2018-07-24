@@ -1,0 +1,66 @@
+@import "~styles/index";
+
+.checkbox-wrapper
+  display inline-block
+  cursor pointer
+
+  .checkbox
+    position relative
+    display inline-block
+    margin-right 5px
+    size(14px, 14px)
+    line-height 1
+    vertical-align middle
+
+    &__inner
+      position relative
+      size(100%, 100%)
+      border 1px solid #999
+      font-weight normal
+      border-radius 2px
+
+      &:after
+        position absolute
+        content ' '
+        offset(4px, 1px)
+        size(5px, 8px)
+        border-right 2px solid $primaryColor
+        border-bottom 2px solid $primaryColor
+        transform rotate(45deg) scale(0)
+        transition all .1s cubic-bezier(.71,-.46,.88,.6)
+
+    &--checked
+      .checkbox__inner
+        border-color $primaryColor
+
+        &:after
+          transform rotate(45deg) scale(1)
+
+    &--disabled
+      input[type=checkbox]
+        cursor not-allowed
+
+      .checkbox__inner
+        border-color #ccc
+        background-color #f3f3f3
+
+      &.checkbox--checked
+        .checkbox__inner:after
+          border-color #999
+
+    input[type=checkbox]
+      position absolute
+      boundary()
+      margin 0
+      size(100%, 100%)
+      opacity 0
+
+  span
+    font-size 12px
+
+.checkbox-group
+  padding 5px 0 0
+
+.multiPropPane-wrapper
+  padding-top 5px
+  margin-right 10px

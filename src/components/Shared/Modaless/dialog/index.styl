@@ -1,0 +1,57 @@
+@import "~styles/index";
+.modaless__dialog
+    position absolute
+    left 20%
+    top 100px
+    transition opacity 0.1s
+    opacity 1
+    
+    &.react-draggable-dragging
+        opacity 0.8
+
+.modaless__content
+    position: relative;
+    background-color: #ffffff;
+    border: none;
+    background-clip: padding-box;
+    box-shadow 6px 6px 12px rgba(0,0,0,0.3)
+    border-top-left-radius 3px
+    border-top-right-radius 3px
+
+.modaless__header
+    padding: 11px 20px;
+    background: #fff;
+    color: #666;
+    cursor move
+    background-color $primaryColor
+    border-top-left-radius 3px
+    border-top-right-radius 3px
+
+.modaless__title
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold; 
+            
+.modaless__close
+    position absolute
+    right 10px
+    top 0
+    color #000
+    opacity 0.3
+    cursor pointer
+
+    &:hover
+        opacity: 1;
+        text-decoration: none;
+     
+.modaless__body
+   
+    overflow: auto;
+    font-size: 12px;
+        
+
+
+
+
+

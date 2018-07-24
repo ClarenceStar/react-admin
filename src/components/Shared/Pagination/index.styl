@@ -1,0 +1,46 @@
+@import "~styles/index";
+
+$pagerWidth = 20px;
+
+.pagination
+  box-sizing border-box
+
+  &__list
+    display flex
+    justify-content flex-start
+
+  &__pager
+    box-sizing border-box
+
+    a
+      box-sizing border-box
+      display block
+      margin 0 3px
+      width $pagerWidth
+      height $pagerWidth
+      line-height $pagerWidth
+      font-size 12px
+      text-align center
+      border 1px solid #aaa
+      border-radius 3px
+      cursor pointer
+      color #333
+
+    .pagination__points
+      border 0 none
+      cursor default
+
+
+  &__pager--active
+
+    a
+      color #fff
+      background-color $primaryColor
+      border 0px none
+      cursor default
+
+  &__total
+    margin 0 5px
+    line-height $pagerWidth
+    font-size 12px
+    color #333

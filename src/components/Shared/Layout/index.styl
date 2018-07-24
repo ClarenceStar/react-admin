@@ -1,0 +1,73 @@
+.layout
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  overflow: auto;
+  background: #ececec;
+
+  &__has-sider
+    flex-direction: row;
+  
+
+  &__header
+  &__footer 
+    flex: 0 0 auto;
+  
+
+  &__header 
+    background: #404040;
+    padding: 0 50px;
+    height: 64px;
+    line-height: 64px;
+  
+
+  &__footer 
+    padding: 24px 50px;
+    color: rgba(0,0,0,.65);
+    font-size: 12px;
+  
+
+  &__content 
+    flex: auto;
+    overflow: auto;
+  
+.layout__sider
+    transition: all .3s ease-out;
+    position: relative;
+    background: #404040;
+    // fix firefox can't set width smaller than content on flex item
+    min-width: 0
+
+    &--trigger 
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+      cursor: pointer;
+      height: 48px;
+      line-height: 48px;
+      background: rgba(64,64,64,.88);
+      color: #fff;
+
+    &--zero-width 
+      & > * 
+        overflow: hidden;
+
+      &-trigger 
+        position: absolute;
+        top: 64px;
+        right: -36px;
+        text-align: center;
+        width: 36px;
+        height: 42px;
+        line-height: 42px;
+        background: #404040;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        transition: background .3s ease;
+
+        &:hover 
+          background: #535353;
+    

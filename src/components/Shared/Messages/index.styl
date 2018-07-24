@@ -1,0 +1,59 @@
+@import "~styles/index";
+
+.messages
+    position: fixed;
+    z-index 10000
+    left 50%
+    transform translateX(-50%)
+    
+.messages--animated
+  
+    margin-bottom: 10px;
+    animation-duration: 0.3s
+    color rgba(0,0,0,.85)
+    text-align center
+
+.messages__header
+    min-height 13px
+
+.messages__close
+    position absolute
+    right 10px
+    top 3px
+    cursor: pointer
+    color black
+    opacity 0.3
+    transform opacity .4 ease
+
+    &:hover
+        opacity 0.6
+    
+.messages__msg
+    padding 10px
+    font-size 12px
+    text-align center
+    background #fff
+    display inline-block
+    word-wrap: break-word;
+    box-shadow 0 2px 8px rgba(0,0,0,0.2)
+
+
+.messages__icon--info
+    margin-right 10px
+    color #108ee9
+
+.messages__icon--success
+    margin-right 10px
+    color #00a854
+
+.messages__icon--warning
+    margin-right 10px
+    color #ffbf00
+
+.messages__icon--error
+    margin-right 10px
+    color #f04134
+
+.messages__icon--loading
+    margin-right 10px
+    color $primaryColor

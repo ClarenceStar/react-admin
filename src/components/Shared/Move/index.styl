@@ -1,0 +1,28 @@
+@import "~styles/index";
+
+.move
+    border-radius: 50%
+    position relative
+    box-shadow 0px 0px 8px rgba(0,0,0,.2)
+    transition all 200ms
+
+    &:hover, &__moving
+        box-shadow 0px 0px 8px rgba(0,0,0,.4)
+
+    &__control
+        border-radius: 50%
+        cursor pointer
+        position absolute
+        margin auto auto
+        boundary()
+        opacity 0.3
+
+        &:hover, .move__moving &
+            opacity 1
+
+        &-icon
+            color darken($primaryColor, 10%)
+            position absolute
+            left 50%
+            top 50%
+            transform translate(-50%,-50%)

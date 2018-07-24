@@ -1,0 +1,52 @@
+@import "~styles/index";
+.collapse
+    &__drop-floor
+        // display none
+        opacity 0
+        height 8px
+        width 240px
+
+    &__drop-floor--active
+        display block
+        opacity .5
+        height 30px
+        background-color $active-background
+
+    &__item
+        border 1px solid #d9d9d9
+        border-bottom 0
+        background-color #f7f7f7
+
+        &:last-child
+            border-bottom 1px solid #d9d9d9
+
+        .collapse__header
+            display flex
+            line-height 38px
+            padding 0px 16px
+            cursor pointer
+            position relative
+            transition all .3s
+
+            &--disabled
+                cursor not-allowed
+                color: rgba(0,0,0,.25);
+
+        .collapse__icon
+            margin-right 10px
+            line-height 38px
+            width 16px
+
+
+        .collapse__content
+            color: rgba(0,0,0,.65);
+            padding 0px 16px
+            background-color: #fff
+            transition height .3s
+
+            &--inactive
+                overflow hidden
+                height 0px
+
+        .collapse__content-box
+            padding 16px 0px

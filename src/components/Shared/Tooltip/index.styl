@@ -1,0 +1,122 @@
+.tooltip__content
+    position absolute
+    z-index 10000
+    font-size 12px
+    line-height 1.5
+    padding-bottom 8px
+
+    animation-duration 0.1s
+
+    &--left
+    &--leftTop
+    &--leftBottom
+        padding-right 8px
+    
+    &--top
+    &--topLeft
+    &--topRight
+        padding-bottom 8px
+    
+    &--bottom 
+    &--bottomLeft
+    &--bottomRight
+        padding-top 8px
+    
+    &--right
+    &--rightTop
+    &--rightBottom
+        padding-left 8px
+    
+.tooltip--hidden
+    opacity 0
+    left: -1000px
+
+.tooltip__arrow
+    position absolute
+    margin-left -5px
+    width 0
+    height 0
+    border-color transparent
+    border-style solid
+    bottom 3px
+    border-width 5px 5px 0
+    border-top-color rgba(64,64,64,.85)
+
+    &--top
+    &--topLeft
+    &--topRight
+        bottom 3px
+        border-width 5px 5px 0
+        border-top-color rgba(64,64,64,.85)
+        
+    &--top
+        left 50%
+        margin-left -5px
+
+    &--topLeft
+        left 16px
+    
+    &--topRight
+        right 16px
+
+    &--left
+    &--leftTop
+    &--leftBottom
+        right 3px
+        border-width 5px 0 5px 5px
+        border-left-color rgba(64,64,64,.85)
+    
+    &--left
+        top 50%
+        margin-top -5px
+    
+    &--leftTop
+        top 8px
+    
+    &--leftBottom
+        bottom: 8px;
+    
+    &--bottom 
+    &--bottomLeft
+    &--bottomRight
+        top 3px
+        border-width 0 5px 5px
+        border-bottom-color rgba(64,64,64,.85)
+    
+    &--bottom
+        left 50%
+        margin-left -5px
+    
+    &--bottomLeft
+        left 16px
+    
+    &--bottomRight
+        right 16px
+    
+    &--right
+    &--rightTop
+    &--rightBottom
+        left 3px
+        border-width 5px 5px 5px 0
+        border-right-color rgba(64,64,64,.85)
+
+    &--right
+        top 50%
+        margin-top -5px
+    
+    &--rightTop
+        top 8px
+    
+    &--rightBottom
+        bottom 8px
+
+
+.tooltip__inner
+    padding: 8px 10px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    background-color: rgba(64,64,64,.85);
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    min-height: 34px;
