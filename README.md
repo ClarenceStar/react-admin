@@ -23,6 +23,7 @@
 ├── constants.js               所有静态常量
 ├── index.js                   入口文件
 ├── index.less                 全局样式
+├── router.js                  页面路由
 ├── .gitignore
 ├── app.js                     项目入口文件
 ├── package.json               
