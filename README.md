@@ -38,7 +38,8 @@
     启动服务
     yarn || npm start
     ```
-* 此单页面app可以配合后台使用 烦请各位移步至<br>[https://github.com/gj459395234/node-server]按照流程部署<br>
+* 此单页面app可以配合后台使用 烦请各位移步至<br>[https://github.com/gj459395234/node-server]
+按照流程部署<br>
 最终效果如下
 ![效果图](https://github.com/gj459395234/markdownimg/blob/master/react_admin.gif)
     
