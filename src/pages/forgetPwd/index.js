@@ -12,6 +12,7 @@ const { Step } = Steps
 export default class StepForm extends PureComponent {
     getCurrentStep() {
         const { location } = this.props;
+        console.log(location)
         const { pathname } = location;
         const pathList = pathname.split('/');
         switch (pathList[pathList.length - 1]) {

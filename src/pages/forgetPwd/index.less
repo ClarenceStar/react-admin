@@ -1,4 +1,49 @@
 @import '~antd/lib/style/themes/default.less';
+
+.result {
+    text-align: center;
+    width: 72%;
+    margin: 0 auto;
+    @media screen and (max-width: @screen-xs) {
+        width: 100%;
+    }
+    .icon {
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 24px;
+        & > .success {
+            color: @success-color;
+        }
+        & > .error {
+            color: @error-color;
+        }
+    }
+    .title {
+        font-size: 24px;
+        color: @heading-color;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+    .description {
+        font-size: 14px;
+        line-height: 22px;
+        color: @text-color-secondary;
+        margin-bottom: 24px;
+    }
+    .extra {
+        background: #fafafa;
+        padding: 24px 40px;
+        border-radius: @border-radius-sm;
+        text-align: left;
+        @media screen and (max-width: @screen-xs) {
+            padding: 18px 20px;
+        }
+    }
+    .actions {
+        margin-top: 32px;
+    }
+}
 .stepForm {
     margin: 40px auto 0;
     max-width: 500px;
@@ -13,11 +58,6 @@
     }
 }
 
-.result {
-    margin: 0 auto;
-    max-width: 560px;
-    padding: 24px 0 8px;
-}
 .desc {
     padding: 0 56px;
     color: @text-color-secondary;
@@ -66,7 +106,7 @@
 .uppercase {
     font-size: 12px;
 }
-@import '~antd/lib/style/themes/default.less';
+
 .card {
     margin-bottom: 24px;
 }

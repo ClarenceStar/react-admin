@@ -14,8 +14,8 @@ export default class NoFindApp extends Component {
         }
         return (
             <div>
-                <p style={styleP} >OOPS! - Could not Find it</p>
-                <h1 style={styleH} >404</h1>
+                <p style={styleP} >Welcome to</p>
+                <h1 style={styleH} >My HomePage</h1>
             </div>
         );
     }

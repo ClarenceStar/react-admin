@@ -31,7 +31,7 @@ class LoginApp extends Component {
                                 })
                                 success("登录成功")
                                 var path = {
-                                    pathname: '/404',
+                                    pathname: '/main',
                                     state: this.state.data,
                                 }
                                 history.push(path);

@@ -1,20 +1,22 @@
-import React, { Fragment, PureComponent } from 'react';
-import { Button, Row, Col } from "antd";
-import Result from '../../components/Result';
-import styles from './index.less';
+import React, { Fragment, PureComponent } from 'react'
+import { Button, Row, Col } from 'antd'
+import Result from '../../components/Result'
+import styles from './index.less'
 import history from '../../util/history'
 class Step3 extends PureComponent {
   componentDidMount() {
-    this.timer = setTimeout(
-      () => {
-        history.push('/login')
-      },3000
-    )
+    this.timer = setTimeout(() => {
+      history.push('/login')
+    }, 3000)
   }
-  componentWillUnmount(){
-    this.timer && clearTimeout(this.timer);
+  componentWillUnmount() {
+    this.timer && clearTimeout(this.timer)
   }
   render() {
+    const { location } = this.props
+    const onFinish = () => {
+      history.goBack()
+    }
     const information = (
       <div className={styles.information}>
         <Row>
@@ -22,15 +24,7 @@ class Step3 extends PureComponent {
             用户名:
           </Col>
           <Col xs={24} sm={16}>
-            gj
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={24} sm={8} className={styles.label}>
-            用户昵称：
-          </Col>
-          <Col xs={24} sm={16}>
-            星河
+            {location.state.userName}
           </Col>
         </Row>
         <Row>
@@ -38,26 +32,34 @@ class Step3 extends PureComponent {
             请牢记新密码
           </Col>
           <Col xs={24} sm={16}>
-            ***
+            {location.state.passWord}
           </Col>
         </Row>
       </div>
-    );
+    )
     const actions = (
       <Fragment>
-        <Button>查看账单</Button>
+        <Button type="primary" style={{marginTop:'10px'}} onClick={onFinish}>
+          返回
+        </Button>
       </Fragment>
-    );
+    )
     return (
       <Result
         type="success"
-        title="操作成功"
-        description="预计两小时内到账"
+        title={
+          <div style={{ background: '#7dbcea', color: '#fff' }}>操作成功</div>
+        }
+        description={
+          <div style={{ background: 'rgba(16, 142, 233, 1)', color: '#fff' }}>
+            请使用新密码登录
+          </div>
+        }
         extra={information}
         actions={actions}
         className={styles.result}
       />
-    );
+    )
   }
 }
 
