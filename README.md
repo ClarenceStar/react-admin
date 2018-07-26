@@ -45,5 +45,5 @@
 ![效果图](https://github.com/xinghe94/markdownimg/blob/master/react_admin.gif)
     
 **demo**: [https://github.com/xinghe94/react-admin]<br>
-有任何react方面问题可以加我git地址上私信我 欢迎探讨
 
+有任何React方面问题可以在github上私信我 欢迎交流
