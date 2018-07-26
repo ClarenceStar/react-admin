@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05f37be9-0ff1-42c7-9d7b-7193858f43d9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-overrides.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/follow/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/follow/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/follow/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/follow/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forgetPwd/Step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forgetPwd/Step2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forgetPwd/Step3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forgetPwd/Step3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forgetPwd/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forgetPwd/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forgetPwd/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forgetPwd/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nofind/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nofind/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wrapWithLoadData.js" beforeDir="false" />
-    </list>
+    <list default="true" id="05f37be9-0ff1-42c7-9d7b-7193858f43d9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -54,8 +35,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="352">
-                <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+              <first_editor relative-caret-position="641">
+                <caret line="48" selection-start-line="48" selection-end-line="48" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -86,7 +67,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+    <option name="x" value="1608" />
     <option name="y" value="203" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -148,15 +129,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532513353304</updated>
-      <workItem from="1532513359871" duration="1783000" />
+      <workItem from="1532513359871" duration="2210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1783000" />
+    <option name="totallyTimeSpent" value="2210000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="203" width="1440" height="877" extended-state="0" />
+    <frame x="1608" y="203" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
@@ -209,8 +190,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <first_editor relative-caret-position="641">
+            <caret line="48" selection-start-line="48" selection-end-line="48" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

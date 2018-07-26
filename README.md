@@ -39,11 +39,11 @@
     启动服务
     yarn || npm start
     ```
-* 此单页面app可以配合后台使用 烦请各位移步至<br>[https://github.com/gj459395234/node-server]
+* 此单页面app可以配合后台使用 烦请各位移步至<br>[https://github.com/xinghe94/node-server]
 按照流程部署<br>
 最终效果如下
-![效果图](https://github.com/gj459395234/markdownimg/blob/master/react_admin.gif)
+![效果图](https://github.com/xinghe94/markdownimg/blob/master/react_admin.gif)
     
-**demo**: [https://github.com/gj459395234/react-admin]<br>
-有任何react方面问题可以加我git地址上企鹅联系我 欢迎探讨
+**demo**: [https://github.com/xinghe94/react-admin]<br>
+有任何react方面问题可以加我git地址上私信我 欢迎探讨
 
