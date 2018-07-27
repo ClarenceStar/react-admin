@@ -10,26 +10,19 @@ const { Sider } = Layout
 const SubMenu = Menu.SubMenu
 
 const breadcrumbNameMap = {
-  main: '首页',
-  hehe: 'hehe',
-  haha: 'haha',
-  follow: '项目地址',
-  musicstyle: '音乐系列',
-  tools: '小工具',
-  clock: '时钟',
-  comment: '博客',
-  music: '音乐',
-  tool: '工具栏'
+  '/main': '首页',
+  '/blog': '博客模块',
+  '/blog/comment': '评论',
+  '/blog/comment/hehe': 'hehe',
+  '/blog/comment/haha': 'haha',
+  '/follow': '项目地址',
+  '/music': '音乐模块',
+  '/music/musicstyle': '音乐系列',
+  '/tool': '工具模块',
+  '/tool/tools': '小工具',
+  '/tool/clock': '时钟'
 }
-const prefix = {
-  main: '',
-  hehe: 'comment',
-  haha: 'comment',
-  follow: '',
-  musicstyle: 'music',
-  tools: 'tool',
-  clock: 'tool'
-}
+
 export default class MainApp extends Component {
   state = {
     collapsed: false,
@@ -66,31 +59,24 @@ export default class MainApp extends Component {
     const { location } = this.props
     const pathSnippets = location.pathname.split('/').filter(i => i)
     const breadcrumbItems = pathSnippets.map((_, index) => {
-      const url = `${pathSnippets.slice(0, index + 1).join('/')}`
-      const extraBreadcrumbItems = (
-        <Breadcrumb.Item key={url}>
-          <Link to={{ pathname: url, state: location.state }}>
-            {breadcrumbNameMap[url]}
-          </Link>
-        </Breadcrumb.Item>
-      )
-      if (prefix[url] !== '') {
-        const prefixbreadcrumbItems = (
-          <Breadcrumb.Item key={prefix[url]}>
-            <Link to={{ pathname: prefix[url], state: location.state }}>
-              {breadcrumbNameMap[prefix[url]]}
-            </Link>
+      const url = `/${pathSnippets.slice(0, index + 1).join('/')}`
+      if (location.pathname === url) {
+        return (
+          <Breadcrumb.Item key={url}>
+            <span style={{fontWeight:'bold'}}>{breadcrumbNameMap[url]}</span>
           </Breadcrumb.Item>
         )
-        const finalbreadcrumbItems = [prefixbreadcrumbItems].concat(
-          extraBreadcrumbItems
-        )
-        return finalbreadcrumbItems
       } else {
-        return extraBreadcrumbItems
+        return(
+          <Breadcrumb.Item key={url}>
+            <Link to={{ pathname: url, state: location.state }}>
+              {breadcrumbNameMap[url]}
+            </Link>{' '}
+          </Breadcrumb.Item>
+        )
       }
     })
-
+   
     return (
       <div>
         <Layout className="containAll">
@@ -222,7 +208,7 @@ export default class MainApp extends Component {
               clear={this.clear}
               data={location.state}
             />
-            <Breadcrumb separator=">">{breadcrumbItems}</Breadcrumb>
+            <Breadcrumb separator=">" style={{marginTop:'10px',marginLeft:'80%'}}>{breadcrumbItems}</Breadcrumb>
             <Contents />
             <Footer />
           </Layout>

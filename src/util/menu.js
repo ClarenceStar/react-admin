@@ -7,11 +7,11 @@ export const allMenu = [
     children: [
       {
         name: '个人博客',
-        url: 'comment',
+        url: 'blog/comment',
         icon: 'star',
         children: [
-          { name: 'hehe', url: 'hehe', icon: 'star' },
-          { name: 'haha', url: 'haha', icon: 'star' }
+          { name: 'hehe', url: 'blog/comment/hehe', icon: 'star' },
+          { name: 'haha', url: 'blog/comment/haha', icon: 'star' }
         ]
       }
     ]
@@ -21,15 +21,15 @@ export const allMenu = [
     name: '音乐模块',
     url: 'music',
     icon: 'bars',
-    children: [{ name: '音乐系列', url: 'musicstyle', icon: 'star' }]
+    children: [{ name: '音乐系列', url: 'music/musicstyle', icon: 'star' }]
   },
   {
     name: '工具模块',
     url: 'tool',
     icon: 'tool',
     children: [
-      { name: '小应用', url: 'tools', icon: 'star' },
-      { name: '时钟', url: 'clock', icon: 'star' }
+      { name: '小工具', url: 'tool/tools', icon: 'star' },
+      { name: '时钟', url: 'tool/clock', icon: 'star' }
     ]
   }
 ]

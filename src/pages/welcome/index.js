@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-export default class NoFindApp extends Component {
+export default class WelcomeApp extends Component {
     render() {
         let styleP = {
             textAlign: 'center',

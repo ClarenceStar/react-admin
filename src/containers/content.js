@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import { Layout } from 'antd'
 import './content.less'
-import NoFind from '../pages/nofind'
+import Welcome from '../pages/welcome'
 import Follow from '../pages/follow'
 import Music from '../pages/music'
 import Tools from '../pages/tools'
@@ -16,25 +16,14 @@ export default class Contents extends Component {
   render() {
     return (
       <Content history={history} location={location}>
-        <Route path="/main" component={NoFind} />
+        <Route path="/main" component={Welcome} />
         <Route path="/follow" component={Follow} />
-        <Route path="/musicstyle" component={Music} />
-        <Route path="/tools" component={Tools} />
-        <Route path="/clock" component={Clock} />
-        <Route path="/comment" component={Comment} />
-        <Route path="/hehe" component={Tools} />
-        <Route path="/haha" component={Clock} />
-
-        {/* <Route
-          path="blog/comment"
-          exact
-          render={({ history, location, match }) => (
-            <Comment history={history} location={location} match={location}>
-              <Route path="blog/comment/hehe" exact component={Tools} />
-              <Route path="/haha" exact component={Clock} />
-            </Comment>
-          )}
-        /> */}
+        <Route path="/music/musicstyle" component={Music} />
+        <Route path="/tool/tools" component={Tools} />
+        <Route path="/tool/clock" component={Clock} />
+        <Route path="/blog/comment" exact component={Comment} />
+        <Route path="/blog/comment/hehe" component={Tools} />
+        <Route path="/blog/comment/haha" component={Welcome} />
       </Content>
     )
   }
