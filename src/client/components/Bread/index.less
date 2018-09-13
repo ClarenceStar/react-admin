@@ -1,0 +1,26 @@
+@breadcrumb-prefix-cls: ~"breadcrumb";
+
+.@{breadcrumb-prefix-cls}
+{
+    color: fade(#000,45%);
+    font-size: 14px;
+    a{
+        color: fade(#000, 45%);
+        transition: color .3s;
+        &:hover {
+            color: #1890ff
+        }
+    }
+    & > span:last-child {
+        color: fade(#000, 65%);
+        font-weight: bold;
+        pointer-events:none
+    }
+    & > span:last-child &-separator {
+        display: none;
+    }
+    &-separator {
+        color: fade(#000, 45%);
+        margin: 0 8px;
+    }
+}
